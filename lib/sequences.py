@@ -6,7 +6,7 @@ def print_fibonacci(length):
     sequence.append(1)
     
     while len(sequence) < length :
-        next_number = sequence[(len(sequence) - 1)] + sequence[(len(sequence) - 2)]
+        next_number = sequence[-1] + sequence[-2]
         sequence.append(next_number)
     return sequence[0:length]
     
